@@ -1,5 +1,7 @@
 package learn_java;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 class Demo_1 {
 	Demo_1(){
@@ -79,7 +81,16 @@ class Father {
 //	}
 	
 	Father(String name, int age){
-		System.out.println("Father");
+		System.out.println("<===============s===FATHER====================>");
+		System.out.println(getClass().getName());
+		System.out.println(getClass().getSuperclass().getName());
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+		System.out.println(Thread.currentThread().getStackTrace()[1].getFileName());
+		System.out.println(Thread.currentThread().getStackTrace()[1].getLineNumber());
+		System.out.println(Thread.currentThread().getStackTrace()[1].getClassName());
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		System.out.println(dateFormat.format( new Date() ));
+		System.out.println("<===============e===FATHER====================>");
 	}
 
 	public String getName() {
