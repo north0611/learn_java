@@ -1,4 +1,4 @@
-package learn_java._20200102_rmi;
+package rmi_20200102;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;

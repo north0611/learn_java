@@ -1,4 +1,4 @@
-package learn_java;
+package methodline_20190922;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -186,7 +186,7 @@ class Son4 extends Father{//, Son1{
 	
 }
 
-public class Class_190922 {
+public class Class {
 	
 	public static void main(String[] args) {
 
